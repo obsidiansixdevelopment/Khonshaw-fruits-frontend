@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-video {
+    width: 100%;
+    /* height: 40vw; Set your desired height */
+    object-fit: cover; /* This will help maintain the aspect ratio and fill the container */
+  }
