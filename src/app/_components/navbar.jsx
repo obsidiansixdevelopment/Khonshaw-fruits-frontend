@@ -1,7 +1,11 @@
+"use client"
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 export default function Navbar() {
+  const path = usePathname();
   return (
     <nav className="absolute top-0 z-20 w-full text-white py-4">
     <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -18,11 +22,11 @@ export default function Navbar() {
             Home
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link className="hover:text-primary-main" href="/about-us">
             About
           </Link>
-        </li> */}
+        </li>
         <li>
           <Link className="hover:text-primary-main" href="/products">
             Product

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -11,12 +12,12 @@ export default function Footer() {
   //         </h3>
   //         <p>Importing fresh groceries to Iraqi markets for freshness.</p>
   //         <div className="flex space-x-4 mt-4">
-  //           <a className="text-white hover:text-primary-main" href="#">
+  //           <Link className="text-white hover:text-primary-main" href="#">
   //             <i className="fab fa-facebook-f"></i>
-  //           </a>
-  //           <a className="text-white hover:text-primary-main" href="#">
+  //           </Link>
+  //           <Link className="text-white hover:text-primary-main" href="#">
   //             <i className="fab fa-instagram"></i>
-  //           </a>
+  //           </Link>
   //         </div>
   //       </div>
   //       <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
@@ -44,8 +45,8 @@ export default function Footer() {
   //     <p>Powered by pearl-solution.com © All rights reserved.</p>
   //   </div>
   // </footer>
-  <footer className="bg-green-900 text-white py-8">
-    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-14 px-6">
+  <footer className="bg-secondary-main text-white py-8">
+    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 md:gap-14 sm:gap-8 gap-4 px-6">
       <div className='col-span-2'>
         <h4 className="font-bold mb-4">About us</h4>
         <p>
@@ -57,31 +58,21 @@ export default function Footer() {
       </div>
       <div className='col-span-1'>
         <h4 className="font-bold mb-4">Quick Links</h4>
-        <ul>
+        <ul className='md:space-y-3 space-y-1'>
           <li>
-            <a className="hover:text-gray-300" href="#">
+            <Link className="hover:text-gray-300" href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="hover:text-gray-300" href="#">
+            <Link className="hover:text-gray-300" href="/about-us">
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="hover:text-gray-300" href="#">
+            <Link className="hover:text-gray-300" href="#">
               Our Products
-            </a>
-          </li>
-          <li>
-            <a className="hover:text-gray-300" href="#">
-              Our Presence
-            </a>
-          </li>
-          <li>
-            <a className="hover:text-gray-300" href="#">
-              Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -98,7 +89,7 @@ export default function Footer() {
           alt="Trusted Seller certification"
           height={50}
           className='h-10'
-          src="https://storage.googleapis.com/a1aa/image/AswMthfYkEQQOC5m3zIWFeoL3BgXiTmWaw2HpQfT3qvzymePB.jpg"
+          src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20240501175105.jpg"
           width={100}
         />
       </div>
@@ -130,9 +121,9 @@ export default function Footer() {
       <p>RAKA TRADING COMPANY. All rights reserved.</p>
       <p>
         Managed By
-        <a className="hover:text-gray-300" href="http://www.bharat2export.com">
+        <Link className="hover:text-gray-300" href="http://www.bharat2export.com">
           www.bharat2export.com
-        </a>
+        </Link>
       </p>
     </div>
   </footer>

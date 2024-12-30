@@ -9,20 +9,13 @@ export default function MissionVision() {
       <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0">
         <h2 className="text-2xl font-bold mb-4">MISSION</h2>
         <p>
-          Our Mission is to manufacture, store, and distribute high-caliber
-          agricultural goods promptly to local and international clients. We
-          are committed to managing production processes comprehensively to
-          uphold the interests of the company, community, and customers alike.
+        Our mission is to produce, store, and deliver high-quality agricultural goods efficiently to both local and international clients. We are dedicated to overseeing the entire production process with care, ensuring the well-being of our company, community, and customers.
         </p>
       </div>
       <div className="w-full md:w-1/2 px-4">
         <h2 className="text-2xl font-bold mb-4">VISION</h2>
         <p>
-          Our Vision is to enhance the principles and practices of
-          contemporary and environmentally friendly farming in the Kurdistan
-          area of Iraq. We will offer comprehensive agricultural services and
-          advanced advisory support tailored to the needs of indigenous
-          farmers and clientele in both domestic and international markets.
+        Our vision is to promote modern, sustainable farming practices in the Kurdistan region of Iraq. We aim to provide holistic agricultural solutions and expert advisory support, meeting the unique needs of local farmers and clients in both domestic and international markets.
         </p>
       </div>
     </div>
