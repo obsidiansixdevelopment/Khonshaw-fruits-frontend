@@ -8,7 +8,7 @@ export default function ProductDetail() {
     const imgProducts = [
         {
           alt: "Basket of onions",
-          img: "https://storage.googleapis.com/a1aa/image/Z2VyQhe2wE18ECPu5MiuU5e5Lb44f5R28pVt3eU3NyOVlN9PB.jpg",
+          img: "https://5.imimg.com/data5/ANDROID/Default/2021/3/GP/VO/XV/125443919/screenshot-20210320-183611-jpg-500x500.jpg",
           type:'vegetable'
         },
         {
@@ -28,7 +28,7 @@ export default function ProductDetail() {
         },
         {
           alt: "Green beans",
-          img: "https://storage.googleapis.com/a1aa/image/Sb8J0y9Kv1qVEBtMhfQCdNGHNOe7b9IsWnutCjpxxLfcymePB.jpg",
+          img: "https://media.post.rvohealth.io/wp-content/uploads/2020/06/green-beans-732x549-thumbnail.jpg",
           type:'vegetable'
         },
         {
