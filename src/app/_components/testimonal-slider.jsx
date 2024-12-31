@@ -93,7 +93,7 @@ export default function TestimonialSlider() {
             >
               <div className="md:h-24 md:w-24 h-12 w-12 relative">
                 <Image
-                  src={`/user.png`}
+                  src={`/01.png`}
                   alt="No Preview"
                   fill
                   className="object-cover rounded-full"
