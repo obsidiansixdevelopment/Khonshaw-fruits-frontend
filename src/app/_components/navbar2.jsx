@@ -1,8 +1,26 @@
+"use client"
+
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 import React from 'react'
 
 export default function Navbar2() {
+  const path = usePathname();
+  const arr = [
+    {
+      name:'Home',
+      link:'/'
+    },
+    {
+      name:'Product',
+      link:'/products'
+    },
+    {
+      name:'About',
+      link:'/about-us'
+    },
+  ]
   return (
     <div>
         <header className="bg-secondary-main/80 text-white">
@@ -14,7 +32,7 @@ export default function Navbar2() {
               </div>
               <div className='space-x-2'>
                 <i className="fas fa-envelope"></i>
-                <span>info@raktrading.co.in</span>
+                <span>info@khonshnaw.co.in</span>
 
               </div>
             </div>
@@ -42,21 +60,17 @@ export default function Navbar2() {
                 />
             </div>
             <ul className="flex space-x-6">
-              <li>
-                <Link className="hover:text-gray-300" href="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:text-gray-300" href="/about-us">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:text-gray-300" href="/products">
-                  Product
-                </Link>
-              </li>
+            {
+          arr.map((ele,i) => (
+            <li key={i}>
+              <Link className={`hover:text-gray-300 ${ele.link === path ? "text-primary-main" : ""}`} href={ele.link}>
+                {ele.name}
+              </Link>
+            </li>
+
+          ))
+        }
+            
               {/* <li>
                 <Link className="hover:text-gray-300" href="/contact-us">
                   Contact Us

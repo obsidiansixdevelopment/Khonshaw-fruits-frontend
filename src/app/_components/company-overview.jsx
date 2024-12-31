@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CompanyOverview() {
   return (
-    <section className="py-16 bg-white ">
+    <section className="my-10 bg-white ">
     <div className="max-w-7xl mx-auto md:px-0 px-4">
       <div className="grid md:grid-cols-2 gap-6">
         <div className=" mb-8 md:mb-0 grid justify-items-center text-center">

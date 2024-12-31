@@ -50,7 +50,7 @@ export default function Footer() {
       <div className='col-span-2'>
         <h4 className="font-bold mb-4">About us</h4>
         <p>
-          Raka Trading Company specializes in export of Fresh Fruits and
+        Khonshnaw vegetables & fruits Trading Company specializes in export of Fresh Fruits and
           Vegetables across the world. Our expertise combined with years of
           experience and inter personal relationships with farmers promises our
           customers the best quality products and the most competitive prices.
@@ -70,7 +70,7 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link className="hover:text-gray-300" href="#">
+            <Link className="hover:text-gray-300" href="/products">
               Our Products
             </Link>
           </li>
@@ -100,7 +100,7 @@ export default function Footer() {
           Exchange, Nashik, 422004
         </p>
         <p>+91 92262 63836</p>
-        <p>info@raktrading.co.in</p>
+        <p>info@khonshnaw.co.in</p>
         <div className="flex space-x-4 mt-4">
           <a href="#">
             <i className="fab fa-facebook-f"></i>
@@ -118,11 +118,11 @@ export default function Footer() {
       </div>
     </div>
     <div className="text-center mt-8">
-      <p>RAKA TRADING COMPANY. All rights reserved.</p>
+      <p>Khonshnaw Trading Company. All rights reserved.</p>
       <p>
         Managed By
-        <Link className="hover:text-gray-300" href="http://www.bharat2export.com">
-          www.bharat2export.com
+        <Link className="hover:text-gray-300" href="http://www.khonshnawtrading.com">
+          www.khonshnawtrading.com
         </Link>
       </p>
     </div>
