@@ -12,7 +12,7 @@ export default function page() {
   <HeroSection2 name={'Nourishing Fruits, Freshly Picked for You'} img={'https://storage.googleapis.com/a1aa/image/BrZZuMBOY2ofcS0K9ZDaYy1ZXDdFgrPAeU6Tv6X8edRifP9PB.jpg'} />
 
   
-  <section className="max-w-7xl mx-auto py-12 px-6">
+  <section className="max-w-7xl mx-auto my-10 px-6">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div className="bg-white p-6 shadow-md text-center">
         <i className="fas fa-leaf text-secondary-main text-4xl mb-4"></i>
@@ -35,7 +35,7 @@ export default function page() {
     </div>
   </section>
   <HappyClient />
-  <section className="py-12">
+  <section className="my-10">
     <div className="max-w-7xl mx-auto px-6">
       <h2 className="text-3xl font-bold text-secondary-main mb-6 text-center">
         A Few Reasons Why People Choose Us
@@ -56,7 +56,7 @@ export default function page() {
       </div>
     </div>
   </section>
-  <section className=" py-12">
+  <section className=" my-10">
     <div className="max-w-7xl mx-auto md:px-0 px-4">
       {/* <h2 className="text-3xl font-bold text-secondary-main mb-6 text-center">
         Contact Us
@@ -64,7 +64,7 @@ export default function page() {
      <form>
           <div className="mb-4">
             <label
-              className="block text-secondary-main mb-2"
+              className="block text-secondary-main font-medium mb-2"
               htmlFor="business-description"
             >
               Fresh Grocery Market Factory Importer
@@ -78,7 +78,7 @@ export default function page() {
           </div>
           <div className="mb-4">
             <label
-              className="block text-secondary-main mb-2"
+              className="block text-secondary-main font-medium mb-2"
               htmlFor="phone-number"
             >
               Phone number*
@@ -92,7 +92,7 @@ export default function page() {
           </div>
           <div className="mb-4">
             <label
-              className="block text-secondary-main mb-2"
+              className="block text-secondary-main font-medium mb-2"
               htmlFor="fruits-import"
             >
               Fresh Fruits Importer to Iraq?

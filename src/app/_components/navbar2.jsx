@@ -67,7 +67,7 @@ export default function Navbar2() {
             {
           arr.map((ele,i) => (
             <li key={i}>
-              <Link className={`hover:text-gray-300 ${ele.link === path ? "text-primary-main" : ""}`} href={ele.link}>
+              <Link className={`hover:text-gray-300 max-md:text-sm font-medium ${ele.link === path ? "text-primary-main" : ""}`} href={ele.link}>
                 {ele.name}
               </Link>
             </li>
