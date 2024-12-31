@@ -4,9 +4,9 @@ import Navbar from './navbar'
 export default function HeroSection() {
   return (
     <section
-    className="relative bg-cover bg-center md:h-[120vh]"
+    className="relative bg-cover bg-center md:h-[110vh]"
     >
-      <Navbar />
+      {/* <Navbar /> */}
      <video className="custom-video absolute h-full " loop playsInline muted autoPlay>
           <source src="/hero.mp4" type="video/mp4" />
           <track
@@ -20,7 +20,7 @@ export default function HeroSection() {
     
     <div className="absolute inset-0 bg-black opacity-70"></div>
     <div className="max-w-7xl mx-auto relative z-10 grid md:grid-cols-2 gap-6 items-center justify-center h-full text-white p-4">
-      <div className='md:pt-0 pt-20'>
+      <div className='md:pt-0 pt-10'>
         <p className="lg:text-7xl md:text-6xl sm:text-5xl text-4xl max-md:pt-20 font-semibold mb-4">
           Fresh <span className="block"> Groceries </span>Importing to Iraqi Markets
         </p>

@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Whatsapp from "./_components/whatsapp";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
           <link
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
           />
+          <Whatsapp />
         {children}
       </body>
     </html>

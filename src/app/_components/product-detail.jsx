@@ -13,17 +13,7 @@ export default function ProductDetail() {
         },
         {
           alt: "Basket of tomatoes",
-          img: "https://storage.googleapis.com/a1aa/image/pDfbtwUGUmSlNSWftHHrQexqVJiQzyTT1BTXwB6UVffiJb6fE.jpg",
-          type:'vegetable'
-        },
-        {
-          alt: "Green beans",
-          img: "https://storage.googleapis.com/a1aa/image/Sb8J0y9Kv1qVEBtMhfQCdNGHNOe7b9IsWnutCjpxxLfcymePB.jpg",
-          type:'vegetable'
-        },
-        {
-          alt: "Basket of tomatoes",
-          img: "https://storage.googleapis.com/a1aa/image/pDfbtwUGUmSlNSWftHHrQexqVJiQzyTT1BTXwB6UVffiJb6fE.jpg",
+          img: "https://www.marthastewart.com/thmb/lQdni99TYpIaX8ydXXQTDsMluB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ms-tomatoes-getty-de1102f163ac4aac924d1dc7e2bc8950.jpg",
           type:'vegetable'
         },
         {
@@ -33,7 +23,7 @@ export default function ProductDetail() {
         },
         {
           alt: "Ginger",
-          img: "https://storage.googleapis.com/a1aa/image/1NW9htBTayYpBxhsLkqusxEvqdPqXPfwwbv0vx0mjabospfTA.jpg",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjh4JJ1N36_MY9KpYc9UdHytRXzEslwzJbg&s",
           type:'vegetable'
         },
         {
@@ -50,6 +40,31 @@ export default function ProductDetail() {
           alt: "Green apples",
           img: "https://storage.googleapis.com/a1aa/image/aGWCaVEmLpbULFw1l7L0zM07bbr8ny4ScMrfatfUQj3WZTfnA.jpg",
           type:'fruit'
+        },
+        {
+          alt: "Carrot",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTba3FfUO6CI9cySnHdGt1roZY60bdUInxLXQ&s",  // Replace with the actual image URL
+          type: "vegetable",
+        },
+        {
+          alt: "Pineapple",
+          img: "https://m.media-amazon.com/images/I/71C-mAYZWTL._AC_UF1000,1000_QL80_.jpg",  // Replace with the actual image URL
+          type: "fruit",
+        },
+        {
+          alt: "Cucumber",
+          img: "https://gourmetgarden.in/cdn/shop/products/English_Cucumber_ce5b7ab7-abe5-4985-bbc5-14e6d7041d2a_1280x.jpg?v=1735312954",  // Replace with the actual image URL
+          type: "vegetable",
+        },
+        {
+          alt: "Strawberry",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWbyE0J8E6XLzTvD8t8XsLQDVIZ9FPKtmxA&s",  // Replace with the actual image URL
+          type: "fruit",
+        },
+        {
+          alt: "broccoli",
+          img: "https://images.squarespace-cdn.com/content/v1/5b5aa0922487fd1ce32c117a/1547765015801-FSR1DVSKCZU3PAYWIRQG/broccoli.jpg",  // Replace with the actual image URL
+          type: "vegetable",
         },
       ];
   return (

@@ -8,11 +8,13 @@ import MainHeader from "./_components/main-header";
 import TestimonialSlider from "./_components/testimonal-slider";
 import QualityAssurance from "./_components/quality-assurance";
 import FAQ from "./_components/faq";
+import Navbar2 from "./_components/navbar2";
 
 export default function Home() {
   return (
     <>
-      <MainHeader />
+      {/* <MainHeader /> */}
+      <Navbar2 />
       <HeroSection />
       <QualityAssurance />
       <CompanyOverview />
