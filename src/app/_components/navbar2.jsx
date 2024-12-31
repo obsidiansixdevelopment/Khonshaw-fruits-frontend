@@ -20,6 +20,10 @@ export default function Navbar2() {
       name:'About',
       link:'/about-us'
     },
+    {
+      name:'Contact',
+      link:'/contact-us'
+    }
   ]
   return (
     <div>
@@ -28,7 +32,7 @@ export default function Navbar2() {
             <div className="flex items-center md:space-x-4 max-md:justify-between w-full">
               <div className='space-x-2'>
                 <i className="fas fa-phone-alt"></i>
-                <span>+91 92262 63836</span>
+                <span>00971504459495</span>
               </div>
               <div className='space-x-2'>
                 <i className="fas fa-envelope"></i>
@@ -51,15 +55,15 @@ export default function Navbar2() {
         </header>
         {/* Navigation */}
         <nav className="bg-secondary-main text-white">
-          <div className="max-w-7xl mx-auto flex justify-between items-center md:py-4 py-2 md:px-0 px-2 ">
+          <div className="max-w-7xl mx-auto flex justify-between items-center md:py-4 py-2 md:px-0 px-4 ">
             <div className="flex items-center">
                <img
                   alt="Company Logo"
                   className="h-14 object-contain"
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=174,fit=crop,q=95/AGB4ykaxK8TJ7bpG/asset-3-copy-YBg4ZJ0GOMUgkPBl.jpg"
+                  src="/logo.jpg"
                 />
             </div>
-            <ul className="flex space-x-6">
+            <ul className="flex md:space-x-6 space-x-2">
             {
           arr.map((ele,i) => (
             <li key={i}>

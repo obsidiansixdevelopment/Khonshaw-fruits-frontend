@@ -24,8 +24,8 @@ export default function HeroSection() {
         <p className="lg:text-7xl md:text-6xl sm:text-5xl text-4xl max-md:pt-20 font-semibold mb-4">
           Fresh <span className="block"> Groceries </span>Importing to Iraqi Markets
         </p>
-        <p className="md:text-lg text-sm md:mb-8 mb-4 text-primary-main">HEWA OMER AHMED GENERAL TRADING COMPANY</p>
-        <button className="bg-primary-main hover:bg-primary-main/90 text-white font-bold md:py-3 py-2 rounded-full w-44">
+        <p className="md:text-lg text-sm md:mb-8 mb-4 text-primary-main uppercase">Khonshnaw vegetables & fruits Trading Company</p>
+        <button className="bg-primary-main/80 hover:bg-primary-main/90 text-white font-bold md:py-3 py-2 rounded-full w-44">
           Explore
         </button>
         
@@ -74,7 +74,7 @@ export default function HeroSection() {
               defaultValue={""}
             />
           </div>
-          <button className="bg-primary-main hover:bg-primary-main/90 text-white font-bold py-2 px-4 rounded w-full">
+          <button className="bg-primary-main/80 hover:bg-primary-main/90 text-white font-bold py-2 px-4 rounded w-full">
             Submit Form Data Here
           </button>
         </form>
