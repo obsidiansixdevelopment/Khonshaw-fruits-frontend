@@ -29,7 +29,7 @@ export default function Navbar2() {
     <div>
         <header className="bg-secondary-main/80 text-white">
           <div className="max-w-7xl mx-auto flex justify-between items-center py-4 md:px-0 px-2">
-            <div className="flex items-center md:space-x-4 max-md:justify-between w-full">
+            <div className="flex items-center md:space-x-4 max-md:justify-between w-full max-md:text-sm px-2">
               <div className='space-x-2'>
                 <i className="fas fa-phone-alt"></i>
                 <span>00971504459495</span>
