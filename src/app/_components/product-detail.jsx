@@ -13,7 +13,7 @@ export default function ProductDetail() {
         },
         {
           alt: "Basket of tomatoes",
-          img: "https://www.marthastewart.com/thmb/lQdni99TYpIaX8ydXXQTDsMluB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ms-tomatoes-getty-de1102f163ac4aac924d1dc7e2bc8950.jpg",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgOzWOh8PxlBvjLVRa_-45hqOSFB_S9PVp9Q&s",
           type:'vegetable'
         },
         {

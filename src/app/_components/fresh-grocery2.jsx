@@ -14,25 +14,26 @@ export default function FreshGrocery2() {
       <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
         <img
           alt="Image of crates of fruits"
-          className="rounded-lg"
+          className="rounded-lg h-96 object-cover"
           height={300}
-          src="https://storage.googleapis.com/a1aa/image/PK2vLw6SUp5OP1tZGENHSfYtHp7fxL2JLHQKKmPlgcphaCfnA.jpg"
+          src="https://img.freepik.com/premium-photo/fresh-organic-vegetables-fruits-shelf-supermarket-farmers-market-healthy-food-concept-vitamins-minerals-tomatoes-capsicum-cucumbers-mushrooms-zucchini_197589-1218.jpg"
           width={400}
         />
       </div>
       <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0">
         <img
           alt="Image of a market stall"
-          className="rounded-lg"
+          className="rounded-lg h-96 object-cover"
           height={300}
-          src="https://storage.googleapis.com/a1aa/image/7T0M3RvrTpYGDZAgtfa0AOVSllwFh89amDX0F0iDKf9saCfnA.jpg"
+          // src="https://storage.googleapis.com/a1aa/image/7T0M3RvrTpYGDZAgtfa0AOVSllwFh89amDX0F0iDKf9saCfnA.jpg"
+          src='https://www.producebusiness.com/wp-content/uploads/2024/10/june-featurevalueadded-featured.jpg'
           width={400}
         />
       </div>
       <div className="w-full md:w-1/3 px-4">
         <img
           alt="Image of a warehouse with fruits"
-          className="rounded-lg"
+          className="rounded-lg h-96 object-cover"
           height={300}
           src="https://storage.googleapis.com/a1aa/image/ea17WVPGvQw5T6OTbRIzSJFWlLZj8dV4Y3Pe9c1SlFHqaCfnA.jpg"
           width={400}

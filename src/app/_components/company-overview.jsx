@@ -14,9 +14,10 @@ export default function CompanyOverview() {
           </p>
           <img
             alt="Image of oranges in a crate"
-            className="rounded-lg"
+            className="rounded-lg h-96"
             height={300}
-            src="https://storage.googleapis.com/a1aa/image/RbwamaltC3L6AhGPyoJ28DLJ8sZpocZI9olf0Nbo80BYNhfTA.jpg"
+            // src="https://storage.googleapis.com/a1aa/image/RbwamaltC3L6AhGPyoJ28DLJ8sZpocZI9olf0Nbo80BYNhfTA.jpg"
+            src='https://upload.wikimedia.org/wikipedia/commons/a/ae/Variety_of_fresh_fruits.jpg'
             width={400}
           />
         </div>
@@ -27,9 +28,9 @@ export default function CompanyOverview() {
           </p>
           <img
             alt="Image of pomegranates"
-            className="rounded-lg"
+            className="rounded-lg h-96"
             height={300}
-            src="https://storage.googleapis.com/a1aa/image/xed7Pdg5ukwtISN3XsdeqcOCsfVJaFuMrR1jT2YBYsaT1EePB.jpg"
+            src="https://m.media-amazon.com/images/I/71XLxmE8jlL.jpg"
             width={400}
           />
         </div>
