@@ -82,9 +82,9 @@ export default function Footer() {
     <div className="text-center mt-8">
       <p>Khonshnaw Trading Company. All rights reserved.</p>
       <p>
-        Managed By
-        <Link className="hover:text-gray-300" href="http://www.khonshnawtrading.com">
-          www.khonshnawtrading.com
+        Managed By {" "}
+        <Link className="hover:text-gray-300" href="http://www.obsidiansix.com">
+           Obsidian Six
         </Link>
       </p>
     </div>
