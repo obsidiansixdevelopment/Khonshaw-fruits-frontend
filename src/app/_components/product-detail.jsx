@@ -8,64 +8,64 @@ export default function ProductDetail() {
     const imgProducts = [
         {
           alt: "Basket of onions",
-          img: "https://5.imimg.com/data5/ANDROID/Default/2021/3/GP/VO/XV/125443919/screenshot-20210320-183611-jpg-500x500.jpg",
+          img: "https://pbs.twimg.com/media/ER2ogiTWsAABXIX?format=jpg&name=large",
           type:'vegetable'
         },
         {
           alt: "Basket of tomatoes",
-          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgOzWOh8PxlBvjLVRa_-45hqOSFB_S9PVp9Q&s",
+          img: "https://images.stockcake.com/public/1/e/b/1eb008cd-a4d0-4a62-8cd6-bd27c0c8f733_large/farmer-harvesting-tomatoes-stockcake.jpg",
           type:'vegetable'
         },
         {
           alt: "Green bananas",
-          img: "https://storage.googleapis.com/a1aa/image/HWeZwfi3veFXhIajTR8NoRpAhE5TRA78xDqICem5YKDFlN9PB.jpg",
+          img: "https://theecologist.org/sites/default/files/styles/inline_l/public/NG_media/396044.jpg?itok=pqjLF-bj",
+          type:'fruit'
+        },
+        // {
+        //   alt: "Ginger",
+        //   img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjh4JJ1N36_MY9KpYc9UdHytRXzEslwzJbg&s",
+        //   type:'vegetable'
+        // },
+        // {
+        //   alt: "Green beans",
+        //   img: "https://media.post.rvohealth.io/wp-content/uploads/2020/06/green-beans-732x549-thumbnail.jpg",
+        //   type:'vegetable'
+        // },
+        {
+          alt: "Garlic",
+          img: "https://wwwi.globalpiyasa.com/lib/Urun/670/5428493e063128e97968479d37ae8d6d_2.jpg",
+          type:'vegetable'
+        },
+        {
+          alt: "apples",
+          img: "https://mamalovesitaly.com/wp-content/uploads/2021/11/Red-apples-on-tree-in-Italy.jpg",
           type:'fruit'
         },
         {
-          alt: "Ginger",
-          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjh4JJ1N36_MY9KpYc9UdHytRXzEslwzJbg&s",
-          type:'vegetable'
-        },
-        {
-          alt: "Green beans",
-          img: "https://media.post.rvohealth.io/wp-content/uploads/2020/06/green-beans-732x549-thumbnail.jpg",
-          type:'vegetable'
-        },
-        {
-          alt: "Onions",
-          img: "https://storage.googleapis.com/a1aa/image/WVHgBor54bZFOFLiiIuSTQsssqtX7BtWKovCn5ocUUyU20fJA.jpg",
-          type:'vegetable'
-        },
-        {
-          alt: "Green apples",
-          img: "https://storage.googleapis.com/a1aa/image/aGWCaVEmLpbULFw1l7L0zM07bbr8ny4ScMrfatfUQj3WZTfnA.jpg",
-          type:'fruit'
-        },
-        {
-          alt: "Carrot",
-          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTba3FfUO6CI9cySnHdGt1roZY60bdUInxLXQ&s",  // Replace with the actual image URL
-          type: "vegetable",
-        },
-        {
-          alt: "Pineapple",
-          img: "https://m.media-amazon.com/images/I/71C-mAYZWTL._AC_UF1000,1000_QL80_.jpg",  // Replace with the actual image URL
+          alt: "Mandarin",
+          img: "https://capetradeportal.com/wordpress/wp-content/upload2/2022/03/Nadorcott-E10D-1xx-768x1024.jpeg",  // Replace with the actual image URL
           type: "fruit",
         },
+        // {
+        //   alt: "Pineapple",
+        //   img: "https://m.media-amazon.com/images/I/71C-mAYZWTL._AC_UF1000,1000_QL80_.jpg",  // Replace with the actual image URL
+        //   type: "fruit",
+        // },
         {
-          alt: "Cucumber",
-          img: "https://gourmetgarden.in/cdn/shop/products/English_Cucumber_ce5b7ab7-abe5-4985-bbc5-14e6d7041d2a_1280x.jpg?v=1735312954",  // Replace with the actual image URL
-          type: "vegetable",
-        },
-        {
-          alt: "Strawberry",
-          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWbyE0J8E6XLzTvD8t8XsLQDVIZ9FPKtmxA&s",  // Replace with the actual image URL
+          alt: "Lemon",
+          img: "https://d3fwccq2bzlel7.cloudfront.net/Pictures/480xAny/6/6/4/126664_2_1218110_e.jpg",  // Replace with the actual image URL
           type: "fruit",
         },
-        {
-          alt: "broccoli",
-          img: "https://images.squarespace-cdn.com/content/v1/5b5aa0922487fd1ce32c117a/1547765015801-FSR1DVSKCZU3PAYWIRQG/broccoli.jpg",  // Replace with the actual image URL
-          type: "vegetable",
-        },
+        // {
+        //   alt: "Strawberry",
+        //   img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWbyE0J8E6XLzTvD8t8XsLQDVIZ9FPKtmxA&s",  // Replace with the actual image URL
+        //   type: "fruit",
+        // },
+        // {
+        //   alt: "broccoli",
+        //   img: "https://images.squarespace-cdn.com/content/v1/5b5aa0922487fd1ce32c117a/1547765015801-FSR1DVSKCZU3PAYWIRQG/broccoli.jpg",  // Replace with the actual image URL
+        //   type: "vegetable",
+        // },
       ];
   return (
     <main className="max-w-7xl mx-auto py-8 px-6">
