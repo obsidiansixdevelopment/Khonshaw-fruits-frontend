@@ -1,11 +1,48 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import Navbar2 from '../_components/navbar2'
 import Footer from '../_components/footer'
 import HeroSection2 from '../_components/hero-section2'
 import HappyClient from '../_components/happy-client'
 import TestimonialSlider from '../_components/testimonal-slider'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-export default function page() {
+export default function ContactUs() {
+  const [formData, setFormData] = useState({
+    businessDescription: "",
+    phoneNumber: "",
+    fruitsImport: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data:", formData);
+
+    if (
+      formData.businessDescription.trim() &&
+      formData.phoneNumber.trim() &&
+      formData.fruitsImport.trim()
+    ) {
+      toast.success("Form submitted successfully!");
+      setFormData({
+        businessDescription: "",
+        phoneNumber: "",
+        fruitsImport: "",
+      });
+    } else {
+      toast.error("Please fill out all fields!");
+    }
+  };
+  
   return (
     <>
   <Navbar2 />
@@ -61,53 +98,65 @@ export default function page() {
       {/* <h2 className="text-3xl font-bold text-secondary-main mb-6 text-center">
         Contact Us
       </h2> */}
-     <form>
-          <div className="mb-4">
-            <label
-              className="block text-secondary-main font-medium mb-2"
-              htmlFor="business-description"
-            >
-              Fresh Grocery Market Factory Importer
-            </label>
-            <input
-              className="shadow appearance-none border rounded-xl w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="business-description"
-              placeholder="Enter your business description here"
-              type="text"
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              className="block text-secondary-main font-medium mb-2"
-              htmlFor="phone-number"
-            >
-              Phone number*
-            </label>
-            <input
-              className="shadow appearance-none border rounded-xl w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="phone-number"
-              placeholder="Your phone number"
-              type="text"
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              className="block text-secondary-main font-medium mb-2"
-              htmlFor="fruits-import"
-            >
-              Fresh Fruits Importer to Iraq?
-            </label>
-            <textarea
-              className="shadow appearance-none border rounded-xl w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="fruits-import"
-              placeholder="Enter the fruits you import"
-              defaultValue={""}
-            />
-          </div>
-          <button className="bg-secondary-main/80 hover:bg-secondary-main/90 text-white font-bold py-2 px-4 rounded w-full">
-            Submit Form Data Here
-          </button>
-        </form>
+     <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <label
+            className="block text-secondary-main font-medium mb-2"
+            htmlFor="business-description"
+          >
+            Fresh Grocery Market Factory Importer
+          </label>
+          <input
+            className="shadow appearance-none border rounded-xl w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="business-description"
+            placeholder="Enter your business description here"
+            type="text"
+            name='businessDescription'
+            value={formData.businessDescription}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-secondary-main font-medium mb-2"
+            htmlFor="phone-number"
+          >
+            Phone number*
+          </label>
+          <input
+            className="shadow appearance-none border rounded-xl w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="phone-number"
+            placeholder="Your phone number"
+            type="text"
+            value={formData.phoneNumber}
+            name='phoneNumber'
+            onChange={handleChange}
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-secondary-main font-medium mb-2"
+            htmlFor="fruits-import"
+          >
+            Fresh Fruits Importer to Iraq?
+          </label>
+          <textarea
+            className="shadow appearance-none border rounded-xl w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="fruits-import"
+            placeholder="Enter the fruits you import"
+            value={formData.fruitsImport}
+            name='fruitsImport'
+            onChange={handleChange}
+          />
+        </div>
+        <button
+          className="bg-secondary-main/80 hover:bg-secondary-main/90 text-white font-bold py-2 px-4 rounded w-full"
+          type="submit"
+        >
+          Submit Form Data Here
+        </button>
+      </form>
+      <ToastContainer />
     </div>
   </section>
   
