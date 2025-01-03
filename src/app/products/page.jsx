@@ -12,7 +12,7 @@ export default function page() {
       <HeroSection2
         name={"Products"}
         img={
-          "https://storage.googleapis.com/a1aa/image/c1ObJJQuGNorLN1aayHYn0KYDrJOhA1QPKdeAGyHRqXtspfTA.jpg"
+          "/02.jpg"
         }
       />
 

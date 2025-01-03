@@ -46,7 +46,7 @@ export default function ContactUs() {
   return (
     <>
   <Navbar2 />
-  <HeroSection2 name={'Nourishing Fruits, Freshly Picked for You'} img={'https://storage.googleapis.com/a1aa/image/BrZZuMBOY2ofcS0K9ZDaYy1ZXDdFgrPAeU6Tv6X8edRifP9PB.jpg'} />
+  <HeroSection2 name={'Nourishing Fruits, Freshly Picked for You'} img={'https://images.unsplash.com/photo-1489450278009-822e9be04dff?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} />
 
   
   <section className="max-w-7xl mx-auto my-10 px-6">

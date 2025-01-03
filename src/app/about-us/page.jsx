@@ -10,7 +10,7 @@ export default function page() {
   return (
     <>
       <Navbar2 />
-      <HeroSection2 name={'About us'} img={'https://storage.googleapis.com/a1aa/image/c1ObJJQuGNorLN1aayHYn0KYDrJOhA1QPKdeAGyHRqXtspfTA.jpg'} />
+      <HeroSection2 name={'About us'} img={'https://images.unsplash.com/photo-1473648717346-73c9c15cbad6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} />
       <AboutUs2 />
       <HappyClient />
       <AboutDetail />
