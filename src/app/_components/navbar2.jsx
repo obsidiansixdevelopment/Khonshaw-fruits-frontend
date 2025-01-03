@@ -29,12 +29,12 @@ export default function Navbar2() {
   return (
     <div>
       <MainHeader />
-      <nav className="bg-secondary-main text-white">
-        <div className="max-w-7xl mx-auto flex justify-between items-center md:py-4 py-2 md:px-0 px-4 ">
+      <nav className="bg-white text-secondary-main">
+        <div className="max-w-7xl mx-auto flex justify-between items-center md:py-2 py-2 md:px-0 px-4 ">
           <div className="flex items-center">
             <img
               alt="Company Logo"
-              className="h-14 object-contain"
+              className="md:h-16 h-12 object-contain"
               src="/logo.jpg"
             />
           </div>
