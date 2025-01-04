@@ -130,7 +130,7 @@ export default function ProductDetail() {
               />
               <div className="absolute top-0 left-0 group-hover:bg-black/20 transition-transform h-full w-full flex justify-center items-center text-white gap-4">
                 
-              <Link href={'tel:+971504459495'} className="hidden group-hover:inline text-xl font-semibold text-primary-main capitalize">
+              <Link href={'tel:+9647509252524'} className="hidden group-hover:inline text-xl font-semibold text-primary-main capitalize">
                 <IoCall className="bg-primary-main text-white text-4xl rounded-full p-2" />
                 </Link>
                 <Link href={'/contact-us#form-data'} className="hidden group-hover:inline text-xl font-semibold text-primary-main capitalize">
