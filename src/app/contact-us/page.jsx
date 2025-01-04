@@ -93,7 +93,7 @@ export default function ContactUs() {
       </div>
     </div>
   </section>
-  <section className=" my-10">
+  <section className=" my-10"  id='form-data'>
     <div className="max-w-7xl mx-auto md:px-0 px-4">
       {/* <h2 className="text-3xl font-bold text-secondary-main mb-6 text-center">
         Contact Us
