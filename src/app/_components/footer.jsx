@@ -61,7 +61,7 @@ export default function Footer() {
         <p>
         Dubai diera port saeed  AL Sayegh Building
         </p>
-        <p className='my-2'>+971 50 445 9495</p>
+        <p className='my-2'>+9647509252524</p>
         <p className='my-2'>info@khonshnaw.co.in</p>
         <div className="flex space-x-4 mt-4">
           <a href="#">

@@ -10,7 +10,7 @@ export default function MainHeader() {
       <div className="flex items-center md:space-x-4 max-md:justify-between w-full max-md:text-sm px-2">
         <div className='space-x-2'>
           <i className="fas fa-phone-alt"></i>
-          <span>+971 50 445 9495</span>
+          <span>+9647509252524</span>
         </div>
         <div className='space-x-2'>
           <i className="fas fa-envelope"></i>
