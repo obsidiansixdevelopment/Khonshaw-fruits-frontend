@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function MainHeader() {
@@ -10,11 +11,12 @@ export default function MainHeader() {
       <div className="flex items-center md:space-x-4 max-md:justify-between w-full max-md:text-sm px-2">
         <div className='space-x-2'>
           <i className="fas fa-phone-alt"></i>
-          <span>+971504459495</span>
+          <Link href={'tel:+971504459495'}>+971504459495</Link>
+          <Link href={'tel:+9647509252524'} className='max-md:block max-md:pl-3'>+9647509252524</Link>
         </div>
         <div className='space-x-2'>
           <i className="fas fa-envelope"></i>
-          <span>info@khonshnaw.com</span>
+          <Link href={'mailto:info@khonshnaw.com'}>info@khonshnaw.com</Link>
 
         </div>
       </div>
