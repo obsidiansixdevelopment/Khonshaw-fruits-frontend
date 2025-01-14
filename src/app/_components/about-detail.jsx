@@ -1,26 +1,38 @@
+"use client"
+
+
+import axios from 'axios';
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function AboutDetail() {
+  const [isData , setIsData] = useState([]);
+  const isFetch = async () => {
+    try{
+      const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/about`);
+      console.log(res.data.data , "done");
+      setIsData(res.data.data)
+    }
+    catch(err){
+      console.log(err , "Error hai");
+    }
+  }
+  useEffect(() => {
+    isFetch();
+  },[])
   return (
     <main className="max-w-7xl mx-auto py-12 md:px-0 px-4">
     <div className="flex flex-col md:flex-row md:space-x-12">
       <div className="md:w-2/3">
         <div className="flex items-center space-x-4 mb-6">
-          <span className="text-6xl text-secondary-main font-bold">5</span>
+          <span className="text-6xl text-secondary-main font-bold">{isData.yearsOfExperience}</span>
           <span className="text-xl text-gray-600">Years of Experience</span>
         </div>
         <h2 className="text-3xl font-bold text-green-900 mb-4">
-          Your Trusted Partner in Global Fresh Produce Export
+        {isData.title}
         </h2>
         <p className="text-gray-700 mb-6">
-        Khonshnaw vegetables & fruits Trading Company is a leading exporter of premium fresh fruits and
-          vegetables worldwide. With years of industry experience and strong,
-          longstanding relationships with trusted farmers, we ensure that our
-          customers receive the highest quality products at the most competitive
-          prices. Our commitment to excellence, coupled with our deep
-          understanding of global markets, allows us to deliver fresh,
-          sustainable produce to meet the diverse needs of our clients.
+        {isData.description}
         </p>
         <div>
         <img

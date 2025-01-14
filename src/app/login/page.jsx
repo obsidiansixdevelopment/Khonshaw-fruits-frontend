@@ -1,67 +1,11 @@
-// "use client";
-
-// import { loginUser } from "@/redux/slice/auth-action";
-// import React, { useState } from "react";
-// import { useDispatch, useSelector } from "react-redux";
-
-// export default function LoginPage() {
-//   const [formData, setFormData] = useState({ email: "", password: "" });
-//   const dispatch = useDispatch();
-//   const { loading, error, user } = useSelector((state) => state.auth);
-
-//   const handleChange = (e) => {
-//     setFormData({ ...formData, [e.target.name]: e.target.value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     dispatch(loginUser(formData));
-//   };
-
-//   return (
-//     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-//       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-//         <h1 className="text-2xl font-bold text-center mb-6">Login</h1>
-//         <form onSubmit={handleSubmit}>
-//           <input
-//             type="email"
-//             name="email"
-//             placeholder="Email"
-//             value={formData.email}
-//             onChange={handleChange}
-//             required
-//             className="w-full p-3 border mb-4 rounded-lg"
-//           />
-//           <input
-//             type="password"
-//             name="password"
-//             placeholder="Password"
-//             value={formData.password}
-//             onChange={handleChange}
-//             required
-//             className="w-full p-3 border mb-4 rounded-lg"
-//           />
-//           <button
-//             type="submit"
-//             className="w-full bg-blue-500 text-white p-3 rounded-lg"
-//             disabled={loading}
-//           >
-//             {loading ? "Logging in..." : "Login"}
-//           </button>
-//         </form>
-//         {error && <p className="text-red-500 mt-4">{error}</p>}
-//         {user && <p className="text-green-500 mt-4">Welcome, {user.name}!</p>}
-//       </div>
-//     </div>
-//   );
-// }
-
 "use client"
 
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
 export default function LoginPage() {
+  const router = useRouter();  
   const [isData , setIsData ] = useState({
     email:'',
     password:''
@@ -76,7 +20,8 @@ export default function LoginPage() {
     e.preventDefault();
     try{
         const response = await axios.post(`${process.env.NEXT_PUBLIC_URL}/login`, isData);
-        console.log("aa gya" , response);
+        router.push('/admin/enquiry')
+        // console.log("aa gya" , response);
     }
     catch(err){
         console.log("error hai" , err);
@@ -128,17 +73,17 @@ export default function LoginPage() {
           </button>
         </form>
         <div className="mt-4 text-center">
-          <p className="text-gray-600">
+          {/* <p className="text-gray-600">
            {" Don't have an account?"}{" "}
             <a href="/signup" className="text-green-600 font-medium hover:underline">
               Sign up
             </a>
-          </p>
-          <p className="mt-2">
+          </p> */}
+          {/* <p className="mt-2">
             <a href="/forgot-password" className="text-green-600 font-medium hover:underline">
               Forgot your password?
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
