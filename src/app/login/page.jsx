@@ -3,8 +3,10 @@
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
+import Cookies from 'js-cookie';
 
 export default function LoginPage() {
+  const [isLoading ,setIsLoading] = useState(false);
   const router = useRouter();  
   const [isData , setIsData ] = useState({
     email:'',
@@ -19,11 +21,16 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-        const response = await axios.post(`${process.env.NEXT_PUBLIC_URL}/login`, isData);
-        router.push('/admin/enquiry')
-        // console.log("aa gya" , response);
+      setIsLoading(true)
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_URL}/login`, isData);
+      // router.push('/admin/enquiry')
+      console.log("aa gya" , response.data.token);
+      const token = response.data.token;
+      Cookies.set("authToken", token, { expires: 1 }); // Expires in 7 days
+      setIsLoading(false)
     }
     catch(err){
+      setIsLoading(false)
         console.log("error hai" , err);
     }
   }
@@ -69,7 +76,7 @@ export default function LoginPage() {
             type="submit"
             className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition"
           >
-            Login
+            Login{isLoading && "...."}
           </button>
         </form>
         <div className="mt-4 text-center">

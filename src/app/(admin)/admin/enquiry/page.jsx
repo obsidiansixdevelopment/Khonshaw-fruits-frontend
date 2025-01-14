@@ -1,6 +1,7 @@
 "use client"
 
 import axios from 'axios'
+import Cookies from 'js-cookie';
 import React, { useEffect, useState } from 'react'
 
 export default function Enquiry() {
@@ -8,7 +9,16 @@ export default function Enquiry() {
   const [isData , setIsData] = useState([]);
   const isFetch = async () => {
     try{
-      const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/enquiry`);
+
+      const token = Cookies.get("authToken");
+      if (!token) {
+        throw new Error("Unauthorized. Token not found.");
+      }
+      const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/enquiry`, {
+        headers:{
+          Authorization:`Bearer ${token}`
+        }
+      });
       console.log(res.data.data , "done");
       setIsData(res.data.data)
     }

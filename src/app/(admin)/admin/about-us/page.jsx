@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Cookies from "js-cookie";
 
 export default function AdminContentEditor() {
   const [formData, setFormData] = useState({
@@ -17,7 +18,9 @@ export default function AdminContentEditor() {
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_URL}/about`);
+        const { data } = await axios.get(
+          `${process.env.NEXT_PUBLIC_URL}/about`
+        );
         // console.log(data.data,"sdfghjk")
         setFormData(data.data);
       } catch (error) {
@@ -36,9 +39,21 @@ export default function AdminContentEditor() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const res = await axios.put(`${process.env.NEXT_PUBLIC_URL}/about`, formData);
+      const token = Cookies.get("authToken");
+      if (!token) {
+        throw new Error("Unauthorized. Token not found.");
+      }
+      const res = await axios.put(
+        `${process.env.NEXT_PUBLIC_URL}/about`,
+        formData,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       toast.success("Content updated successfully!");
-    //   console.log("done")
+      //   console.log("done")
     } catch (error) {
       console.error("Error updating content:", error);
       toast.error("Failed to update content.");
@@ -51,7 +66,10 @@ export default function AdminContentEditor() {
       <h1 className="text-2xl font-bold mb-4">Edit Content</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2" htmlFor="yearsOfExperience">
+          <label
+            className="block text-gray-700 mb-2"
+            htmlFor="yearsOfExperience"
+          >
             Years of Experience
           </label>
           <input
