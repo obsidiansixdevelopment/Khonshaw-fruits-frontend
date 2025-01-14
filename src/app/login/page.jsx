@@ -23,7 +23,7 @@ export default function LoginPage() {
     try{
       setIsLoading(true)
       const response = await axios.post(`${process.env.NEXT_PUBLIC_URL}/login`, isData);
-      // router.push('/admin/enquiry')
+      router.push('/admin/enquiry')
       console.log("aa gya" , response.data.token);
       const token = response.data.token;
       Cookies.set("authToken", token, { expires: 1 }); // Expires in 7 days
