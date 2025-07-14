@@ -85,7 +85,7 @@ export default function Footer() {
       <p>Khonshnaw Trading Company. All rights reserved.</p>
       <p>
         Managed By {" "}
-        <Link className="hover:text-gray-300" href="http://www.obsidiansix.com">
+        <Link title="aniket" className="hover:text-gray-300" href="http://www.obsidiansix.com">
            Obsidian Six
         </Link>
       </p>
